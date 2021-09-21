@@ -1,0 +1,34 @@
+{
+    "key": "${addon.key}",
+    "baseUrl": "${addon.base-url}",
+    "name": "Connect App!",
+    "description": "This is our first App for Jira Cloud!",
+    "vendor": {
+        "name": "DEISER",
+        "url": "https://www.deiser.com"
+    },
+    "enableLicensing": true,
+    "links": {
+        "self": "${addon.base-url}/atlassian-connect.json",
+        "homepage": "${addon.base-url}/atlassian-connect.json"
+    },
+    "authentication": {
+        "type": "jwt"
+    },
+    "lifecycle": {
+        "installed": "/installed",
+        "uninstalled": "/uninstalled",
+        "enabled": "/enabled",
+        "disabled": "/disabled"
+    },
+    "scopes": [
+        "ADMIN",
+        "ACT_AS_USER"
+    ],
+    "modules": {
+    },
+    "apiMigrations": {
+        "context-qsh": true,
+        "signed-install": true
+    }
+}
